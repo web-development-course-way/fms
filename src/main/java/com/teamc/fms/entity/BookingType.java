@@ -19,7 +19,6 @@ public class BookingType {
     @NotNull
     private String name;
     @NotNull
-    private String description;
-    @NotNull
     private String code;
+    private String description;
 }
