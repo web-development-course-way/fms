@@ -1,0 +1,1 @@
+ALTER TABLE subscription_type ADD COLUMN code VARCHAR(255) NOT NULL UNIQUE;
