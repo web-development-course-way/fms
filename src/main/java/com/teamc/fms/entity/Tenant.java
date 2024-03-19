@@ -23,14 +23,11 @@ public class Tenant {
     @NotNull
     private String lastName;
     @NotNull
+    @Column(unique = true)
     private String email;
-    @NotNull
     private String phoneCode;
-    @NotNull
     private String phoneNumber;
-    @NotNull
     @ManyToOne
     private Country nationality;
-    @NotNull
     private LocalDate birthDate;
 }
