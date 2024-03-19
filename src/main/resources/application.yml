@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /api/fms
+
+spring:
+  application.name: Facilities Management System
+  profiles.active: local
