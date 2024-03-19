@@ -29,3 +29,9 @@ databaseChangeLog:
   - include:
       file: changes/booking-timeslot-ddl-v01.sql
       relativeToChangelogFile: true
+  - include:
+      file: changes/booking-type-ddl-v02.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/subscription-type-ddl-v02.sql
+      relativeToChangelogFile: true
