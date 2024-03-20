@@ -18,9 +18,9 @@ public class Facility {
     private String id;
     @NotNull
     private String name;
-    @NotNull
+    
     private String description;
-    @NotNull
+    @NotNull 
     private Integer maxCapacity;
     @OneToMany(mappedBy = "facility")
     private List<TimeSlot> timeSlotList;
