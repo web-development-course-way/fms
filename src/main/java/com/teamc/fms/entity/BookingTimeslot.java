@@ -8,11 +8,10 @@ import lombok.Data;
 @Table(name = "booking_timeslot")
 public class BookingTimeslot {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String timeslotId;
+   @ManyToOne
+    private TimeSlot timeSlot;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String bookingId;
+   @ManyToOne
+    private Booking booking;
 }
+
