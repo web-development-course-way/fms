@@ -14,7 +14,6 @@ public class SendEmailFromTemplateDto {
     private List<String> to;
     private List<String> cc;
     private List<String> bcc;
-    private String subject;
     private EmailTemplate template;
     private Map<String, Object> variables;
 
