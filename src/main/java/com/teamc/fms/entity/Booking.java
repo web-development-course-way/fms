@@ -21,12 +21,6 @@ public class Booking {
     @ManyToOne
     private Tenant tenant;
     @NotNull
-    @ManyToOne
-    private BookingType bookingType;
-    @NotNull
-    @ManyToOne
-    private SubscriptionType subscriptionType;
-    @NotNull
     private LocalDate bookingDate;
     private String notes;
 }
