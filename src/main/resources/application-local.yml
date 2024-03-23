@@ -13,3 +13,5 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: none
+  kafka:
+    bootstrap-servers: localhost:9092
