@@ -8,10 +8,14 @@ import lombok.Data;
 @Table(name = "booking_timeslot")
 public class BookingTimeslot {
 
-   @ManyToOne
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "timeslot_id")
     private TimeSlot timeSlot;
 
-   @ManyToOne
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "booking_id")
     private Booking booking;
 }
 
