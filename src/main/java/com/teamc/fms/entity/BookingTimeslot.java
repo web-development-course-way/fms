@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "booking_timeslot")
+@IdClass(BookingTimeslotPKId.class)
 public class BookingTimeslot {
 
     @Id
