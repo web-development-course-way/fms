@@ -8,7 +8,7 @@ import lombok.*;
 import java.sql.Time;
 
 @Entity
-@Table(name = "time_slot")
+@Table(name = "timeslot")
 @Getter
 @Setter
 @Builder
@@ -16,6 +16,9 @@ import java.sql.Time;
 @AllArgsConstructor
 public class TimeSlot {
     @Id
+    @SequenceGenerator(name = "timeslot_id_seq", sequenceName = "timeslot_id_seq",
+            allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "timeslot_id_seq")
     private Integer id;
     @NotNull
     private Time startHour;
